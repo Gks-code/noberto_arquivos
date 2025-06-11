@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cadastro" class="page">
+    <h2>👥 Cadastro de Alunos</h2>
+
+    <div class="card">
+        <h3>➕ Novo Aluno</h3>
+        <div class="form-group">
+            <label for="nomeAluno">Nome do Aluno:</label>
+            <input type="text" id="nomeAluno" placeholder="Digite o nome completo do aluno">
+        </div>
+        <div class="form-group">
+            <label for="frequenciaAluno">Frequência (%):</label>
+            <input type="number" id="frequenciaAluno" min="0" max="100" placeholder="Ex: 85">
+        </div>
+        <button class="btn" onclick="cadastrarAluno()">Cadastrar Aluno</button>
+    </div>
+
+    <div id="listaAlunos">
+        <h3>📋 Alunos Cadastrados</h3>
+        <div id="alunosCadastrados"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

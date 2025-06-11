@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Média Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Sistema de Média Escolar</h1>
+            <p class="subtitle">Controle completo de alunos, notas e frequência</p>
+        </header>
+
+        <nav>
+    <ul class="nav-buttons"> <li><a href="#" class="nav-btn active" onclick="loadPage('home'); return false;">🏠 Home</a></li>
+        <li><a href="cadastro.html" class="nav-btn" onclick="loadPage('cadastro'); return true;">👥 Cadastro de Alunos</a></li>
+        <li><a href="notas.html" class="nav-btn" onclick="loadPage('notas'); return true;">📝 Lançamento de Notas</a></li>
+        <li><a href="historico.html" class="nav-btn" onclick="loadPage('historico'); return true;">📊 Histórico</a></li>
+    </ul>
+</nav>
+
+        <main id="content-area">
+            </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load the home page by default when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPage('home');
+        });
+    </script>
+</body>
+</html>

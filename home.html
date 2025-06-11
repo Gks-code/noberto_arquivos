@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="home" class="page active">
+    <h2>🎯 Bem-vindo ao Sistema de Média Escolar</h2>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number" id="totalAlunos">0</div>
+            <div class="stat-label">Total de Alunos</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="totalAprovados">0</div>
+            <div class="stat-label">Aprovados</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="totalReprovados">0</div>
+            <div class="stat-label">Reprovados</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="mediaGeral">0.0</div>
+            <div class="stat-label">Média Geral</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>📋 Como usar o sistema:</h3>
+        <p><strong>1. Cadastro de Alunos:</strong> Registre os alunos com nome e frequência.</p>
+        <p><strong>2. Lançamento de Notas:</strong> Selecione um aluno e adicione suas notas. A média é calculada automaticamente.</p>
+        <p><strong>3. Histórico:</strong> Visualize todos os dados dos alunos com seus resultados finais.</p>
+        <p><strong>📏 Critério de Aprovação:</strong> Média ≥ 6.0 = Aprovado | Média < 6.0 = Reprovado</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
